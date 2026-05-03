@@ -12,6 +12,11 @@ module.exports = [
         exports: "readonly",
         test: "readonly",
         expect: "readonly",
+        afterAll: "readonly",
+        beforeAll: "readonly",
+        beforeEach: "readonly",
+        afterEach: "readonly",
+        describe: "readonly",
       }
     },
     rules: {
