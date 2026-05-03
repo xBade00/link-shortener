@@ -27,7 +27,7 @@
      docker:
        name: Docker Build & Push
        runs-on: ubuntu-latest
-       needs: quality          # Läuft NUR wenn quality erfolgreich war
+       needs: quality          # Läuft NUR wenn quality erfolgreich war!
        if: github.ref == 'refs/heads/main'   # Und NUR auf dem main Branch
        steps:
          - uses: actions/checkout@v4
