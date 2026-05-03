@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Next.js
+.next/
+out/
+
+# Umgebungsvariablen
+.env
+.env.local
+.env*.local
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Next.js generierte Typdatei
+next-env.d.ts

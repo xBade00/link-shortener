@@ -230,12 +230,12 @@ docker compose up --build
 docker login
 
 # Images bauen und taggen
-docker build -t DEIN-DOCKERHUB-USERNAME/link-shortener-api ./services/api
-docker build -t DEIN-DOCKERHUB-USERNAME/link-shortener-web ./services/web
+docker build -t xbade00/link-shortener-api ./services/api
+docker build -t xbade00/link-shortener-web ./services/web
 
 # Pushen
-docker push DEIN-DOCKERHUB-USERNAME/link-shortener-api:latest
-docker push DEIN-DOCKERHUB-USERNAME/link-shortener-web:latest
+docker push xbade00/link-shortener-api:latest
+docker push xbade00/link-shortener-web:latest
 ```
 
 ---
