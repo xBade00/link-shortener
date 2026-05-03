@@ -11,6 +11,8 @@
      links[id] = url;
      res.json({ shortUrl: `http://localhost:3001/${id}` });
    });
+   // Health Check (wichtig für Docker & später AWS)
+   app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
    // Weiterleiten
    app.get('/:id', (req, res) => {
@@ -18,9 +20,6 @@
      if (!url) return res.status(404).json({ error: 'Not found' });
      res.redirect(url);
    });
-
-   // Health Check (wichtig für Docker & später AWS)
-   app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
    const PORT = process.env.PORT || 3001;
    app.listen(PORT, () => console.log(`API läuft auf Port ${PORT}`));
